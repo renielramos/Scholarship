@@ -1,6 +1,7 @@
 import unittest
 from Scholarship import is_eligible_for_scholarship
 
+
 class TestScholarshipEligibility(unittest.TestCase):
 
     def test_eligible_student(self):
