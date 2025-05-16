@@ -30,3 +30,6 @@ class TestScholarshipEligibility(unittest.TestCase):
 
     def test_exact_threshold(self):
         self.assertTrue(is_eligible_for_scholarship(4.0, 20000))
+
+if __name__ == "__main__":
+    unittest.main()
