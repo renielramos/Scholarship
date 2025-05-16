@@ -23,8 +23,10 @@ class TestScholarshipEligibility(unittest.TestCase):
         self.assertTrue(is_eligible_for_scholarship(4.0, 20000))
 
     def test_invalid_gpa(self):
-        self.assertFalse(is_eligible_for_scholarship(-1.0, 20000))
+        self.assertFalse(is_eligible_for_scholarship(0.0, 20000))
 
+    def test_negative_income(self):
+         self.assertFalse(is_eligible_for_scholarship(3.0, -20000))
 
 if __name__ == "__main__":
     unittest.main()
