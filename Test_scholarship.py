@@ -21,3 +21,6 @@ class TestScholarshipEligibility(unittest.TestCase):
 
     def test_high_income(self):
         self.assertTrue(is_eligible_for_scholarship(3.8, 5000))
+
+    def test_low_gpa_high_income(self):
+        self.assertTrue(is_eligible_for_scholarship(-5.8, 500000))
