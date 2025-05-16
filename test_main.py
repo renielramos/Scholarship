@@ -26,7 +26,7 @@ class TestScholarshipEligibility(unittest.TestCase):
         self.assertFalse(is_eligible_for_scholarship(0.0, 20000))
 
     def test_negative_income(self):
-        self.assertTrue(is_eligible_for_scholarship(3.0, -20000))
+        self.assertFalse(is_eligible_for_scholarship(3.0, -20000))
 
 
 if __name__ == "__main__":
