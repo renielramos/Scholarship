@@ -1,4 +1,4 @@
-name: Customer Unit Tests CI  # Optional workflow name
+name: Scholarships Unit Tests CI  # Optional workflow name
 
 on: [push, pull_request]
 
@@ -27,4 +27,3 @@ jobs:
       - name: Run tests with unittest
         run: |
           python -m unittest discover -v # Discover and run tests using unittest
-          
