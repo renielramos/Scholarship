@@ -14,4 +14,4 @@ class TestScholarshipEligibility(unittest.TestCase):
         self.assertTrue(is_eligible_for_scholarship(5.0, 100000))
 
     def test_high_income(self):
-         self.assertFalse(is_eligible_for_scholarship(3.8, 50000))
+        self.assertFalse(is_eligible_for_scholarship(3.8, 50000))
